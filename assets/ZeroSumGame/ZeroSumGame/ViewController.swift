@@ -155,12 +155,10 @@ class ViewController: UIViewController {
 //    print("turn \(currentTurn) \(chosenPlayer!) rolled \(randomRoll) against \(opposingPlayer) to pass \(randomThreshold)")
     
     globalSum = 0
-    score.forEach {
-      if let score = score[$0.key] {
-        globalSum += score.roundTo(places: 2)
-      }
+    globalSum = score.reduce(0.0) { (final, data) -> Double in
+      return (final + data.value).roundTo(places: 2)
+    }.roundTo(places: 2)
 //      print("\($0.key): \($0.value) ", terminator:"")
-    }
     
 //    print("")
 //    print("total sum is \(abs(globalSum.roundTo(places: 2)))")
