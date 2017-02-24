@@ -1,0 +1,15 @@
+PODS:
+  - Neon (0.4.0)
+  - ScrollableGraphView (3.1.0)
+
+DEPENDENCIES:
+  - Neon
+  - ScrollableGraphView
+
+SPEC CHECKSUMS:
+  Neon: 7fb5a9327e7e57911843f608e08f4893a74deaf9
+  ScrollableGraphView: e2c8bedc7bbb643e8ac57b9456070d68355c4e4c
+
+PODFILE CHECKSUM: ca1414542d66c801435188c7f0429b04851147f4
+
+COCOAPODS: 1.2.0
